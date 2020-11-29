@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8">
+  <style>
+   .a {
+     width: 100px;
+   height: 100px;
+   background: black;
+   border-radius: 50%;
+   position: absolute;
+    animation: move 5s infinite;
+    animation-direction: normal;
+    background-color: black;
+   }
+   @keyframes move {
+    from { left: 10%; }
+    to { left: 50%; transform: translateX(-100px); }
+   }
+   .b {
+     width: 100px;
+   height: 100px;
+   background: black;
+   border-radius: 50%;
+   position: absolute;
+    top: 150px;
+      animation: mve 5s infinite;
+    animation-direction: alternate-reverse;
+    background-color: black;
+   }
+   @keyframes mve {
+    from { left: 10%; }
+    to { left: 50%; transform: translateX(-100px); }
+   }
+   .c {
+     width: 50px;
+   height: 50px;
+   background: black;
+   border-radius: 50%;
+   position: absolute;
+     top: 300px;
+     animation-direction: normal;
+       animation: mymove 5s infinite;
+   }
+   @keyframes mymove {
+     from { background: black; transform: translateX(0);}
+   to { background: blue; transform: translateX(500px);}
+   }
+   .d {
+       width: 100px;
+       height: 100px;
+       background: black;
+       border-radius: 50%;
+       position: absolute;
+       top: 450px;
+       left: 300px;
+       animation: d 2s infinite;
+
+       }
+       @keyframes d {
+       0%   {background-color: black;}
+       25%  {background-color: blue;}
+       50%  {background-color: #00CCFF;}
+       100% {background-color: #CCFFFF;}
+     }
+     .e {
+         width: 30px;
+         height: 30px;
+         border-radius: 50%;
+         background-color: black;
+         left: 500px;
+         position: relative;
+         top: 600px;
+         animation: first1 2s infinite ease-in-out;
+       }
+       @keyframes first1 {
+         70%{
+           opacity: 1;
+         }
+         100%{
+           border-radius: 50%;
+           transform: scale(3);
+           opacity: 0;
+         }
+  </style>
+ </head>
+ <body>
+  <div class="a"></div>
+  <div class="b"></div>
+  <div class="c"></div>
+  <div class="d"></div>
+  <div class="e"></div>
+ </body>
+</html>
